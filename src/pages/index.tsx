@@ -7,6 +7,7 @@ import { InjectedConnector } from "@web3-react/injected-connector";
 import { useWeb3React } from "@web3-react/core";
 import { Web3Provider } from "@ethersproject/providers";
 import Typography from "@mui/material/Typography";
+import Link from "next/link";
 
 const injectedConnector = new InjectedConnector({
   supportedChainIds: [1, 3, 4, 5, 42],
@@ -26,6 +27,7 @@ export default function Home() {
 
   return (
     <div>
+      <Link href={"test"}>Test</Link>
       {active ? (
         <div>
           <Typography variant="h6">Account: {account}</Typography>
