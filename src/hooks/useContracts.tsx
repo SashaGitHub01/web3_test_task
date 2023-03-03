@@ -30,7 +30,7 @@ export const useContracts = () => {
             Omit<INftMetadata, "tokenId">
           >(tokenUri);
 
-          nfts.push({ ...tokenMetadata, tokenId });
+          nfts.push({ ...tokenMetadata, tokenId: +tokenId });
         }
       }
 
@@ -97,7 +97,9 @@ export const useContracts = () => {
       const signer = library?.getSigner()!;
       const contract = connectNftContract(signer);
       const approvedAddress = await contract.getApproved(tokenId);
-      return approvedAddress === ethers.ZeroAddress ? null : approvedAddress;
+      return approvedAddress === ethers.constants.AddressZero
+        ? null
+        : approvedAddress;
     } catch (err) {
       throw new Error("Error");
     }
