@@ -2,5 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 export type { NftContract } from "./NftContract";
+export type { TestReceiverContract } from "./TestReceiverContract";
 export * as factories from "./factories";
 export { NftContract__factory } from "./factories/NftContract__factory";
+export { TestReceiverContract__factory } from "./factories/TestReceiverContract__factory";

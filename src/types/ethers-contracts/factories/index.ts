@@ -2,3 +2,4 @@
 /* tslint:disable */
 /* eslint-disable */
 export { NftContract__factory } from "./NftContract__factory";
+export { TestReceiverContract__factory } from "./TestReceiverContract__factory";

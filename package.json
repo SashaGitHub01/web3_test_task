@@ -7,11 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "generate-types": "typechain --target=ethers-v5 'src/abi/*.json'"
+    "generate-types": "typechain --target=ethers-v5 'src/abi/*.json' --out-dir=src/types/ethers-contracts"
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
+    "@ethersproject/abi": "^5.7.0",
     "@ethersproject/providers": "^5.7.2",
     "@mui/material": "^5.11.11",
     "@typechain/ethers-v5": "^10.2.0",
