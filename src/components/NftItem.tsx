@@ -1,4 +1,4 @@
-import { IContractsContext } from "@/pages/_app";
+import { IContractsContext } from "@/context/ContractsContext";
 import { INftMetadata } from "@/types/NftMetadata.interface";
 import { Typography, Paper, Box, Button } from "@mui/material";
 import React, { PropsWithChildren, useEffect, useState } from "react";
